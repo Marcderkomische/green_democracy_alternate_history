@@ -21,7 +21,7 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1928;
+Q.year = 2022;
 Q.month = 1;
 // how many actions have been taken this month?
 Q.month_actions = 0;
@@ -205,14 +205,14 @@ Q.rural = 25; // agriculture and forestry employment... but many of those are pr
 Q.unemployed = 8.6;
 Q.catholics = 30;
 
-// unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
+// unemployment: 1929 - 5.8, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
 
 // income for industrial workers in reichsmarks/year - 1928 = 1600 Reichsmarks/year; 1931 = 1440 Reichsmarks/year; 1933 = 1138 Reichsmarks/year - source: https://babel.hathitrust.org/cgi/pt?id=uiug.30112104147985&seq=50
 Q.income = 1600;
 // what about incomes for different classes? rural workers? middle-class workers?
 
 // inflation (in %; 1928: 2.9; 1929: 0; 1930: -5%; 1931: -10%; 1932: -10%) - source: https://en.wikipedia.org/wiki/File:BSPDRWeltkriseEngl.PNG, derived from https://www.destatis.de/DE/Methoden/WISTA-Wirtschaft-und-Statistik/2009/03/rezession-betrachtung-032009.pdf?__blob=publicationFile
-Q.inflation = 2.9;
+Q.inflation = 4.9;
 
 // economic growth - same source as above, Table 2 (preisbereinigt) - this is also the source for the yearly changes in the great depression.
 Q.economic_growth = 4.4;
@@ -504,8 +504,8 @@ Q.n_elections = 0;
 Q.no_majority_elections = 0;
 // elections are not on a timer, but rather there is an indicator for whether you're in an electoral cycle.
 Q.in_election = 1;
-Q.next_election_year = 1928;
-Q.next_election_month = 5;
+Q.next_election_year = 2025;
+Q.next_election_month = 9;
 Q.next_election_time = 5;
 // government affairs timers
 Q.agricultural_policy_timer = 0;
@@ -625,7 +625,7 @@ audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
-= 1928
+= 2022
 
 It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
 
