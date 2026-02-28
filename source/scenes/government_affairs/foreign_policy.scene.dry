@@ -8,9 +8,9 @@ card-image: img/portraits/BreitscheidRudolf.jpg
 go-to: fp_menu
 #subtitle: International relations and dealing with Versailles.
 
-= Foreign Policy
+= The Russian Invasion of Ukraine
 
-What should our foreign policy priority be?
+Panic in the Cabinett! Russian President Putin has announced a "Special Millitary Operation" in Ukraine to demillitarize and "de-nazify" the Country, moments after wich the Russian Army began a full-on ground Invasion with large-scale Missile Strikes both against the Millitary and Civillian Population. Already thousands have died, with millions now trying to flee the Country. The Chancellor has called in an Emergency meeting, to discuss our Options. While our Coalition Partners are supportive of help to Ukraine, they have some qualms about burning diplomatic relations and crossing "red lines". What should we do? 
 
 @fp_menu
 
@@ -32,20 +32,22 @@ What should our foreign policy priority be?
 - @cancel_advisor_action
 
 @improve_west
-title: Improve our relations with the Western Allies.
+title: Mr. Scholz, what Russia is doing is ethnic cleansing, what red lines are there to cross? Kill the Bastards and Slava Ukraini!
+subtitle: -3 Budget and -2 Budget per year. This unapolegetic stance will certainly raise some eyebrows
 on-arrival: west_relation += 2; reparations_negotiation += 1
 
 The key to peace in Europe is a rapproachment between France and Germany. We are taking steps towards that rapproachment. [? if young_plan_seen == 0 : This is difficult to do when France is occupying a major portion of Germany's territory, but we are working on that part. ?]
 
 @improve_east
-title: Improve our relations with our eastern neighbors.
+title: We need to provide mindful support to Ukraine, both humanitarian and millitarily, in coordination with our security partners. This violation of international law cannot be rewarded.
+subititle: -1 Budget and -2 Budget per year. The preferred Option of the German electorate and within our Party.
 on-arrival: east_relation += 2;
 
 We also aim to improve relations with our eastern neighbors, Poland and Czechoslovakia, who are righfully terrified of German aggression. Hopefully we can convince them of our peaceful intentions.
 
 @improve_soviet
-title: Improve our relations with the Soviet Union.
-subtitle: We could also broach the question of the KPD...
+title: We must provide humanitarian aid for the Ukrainians who have now lost their home. However it would be disingenious of our roots as a pacifist party to send cannons into a War that will probably be over in a few weeks anyway.
+subtitle: -1 Budget and -1 Budget per year. This Position will be certainly be heavily critizised by even some Center-Left figures.
 
 The Soviet Union also suffered from the international order created by the Treaty of Versailles; they have been participating in our secret rearmament program. The Treaty of Rapallo in 1922 affirmed our friendly relations.
 
@@ -116,8 +118,9 @@ Immediately, France and other neighboring countries lodge their protests. The lo
 
 
 @negotiate
-title: Negotiate regarding our remaining obligations from the Treaty of Versailles.
-subtitle: [? if young_plan_seen == 1 : After passing the Young Plan, France has committed to withdrawing from the Rhineland. Now, we must see if they can reduce our reparations further, given the economic depression. ?]
+title: Actually did you know that Nato-
+subtitle: -67 Budget. Uh, no?
+choose-if: budget > 5000
 view-if: reparations > -2 and reparations_negotiation < 3
 on-arrival: west_relation += 1; reparations_negotiation += 1; reparations_negotiation += 1 if pacifism >= 3; reparations_negotiations += 1 if nationalism <= 50; reparations_negotiation += 1 if west_relation >= 3
 
@@ -137,7 +140,7 @@ This has reduced tensions within our government, and our party has gotten credit
 
 @expose
 title: Expose the secret rearmament plans of the previous foreign ministry!
-view-if: rearmament_exposed == 0
+view-if: rearmament_exposed ==  1
 on-arrival: west_relation += 2; east_relation += 1; nationalism -= 5*(1-dissent); pro_republic += 5*(1-dissent); coalition_dissent += 1; rearmament_exposed += 1; reparations_negotiation += 3; coup_progress += 2
 
 The previous foreign ministry, despite its benevolent and peaceful face, was secretly helping the Reichswehr to build up its forces, in contravention of the Treaty of Versailles.
