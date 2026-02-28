@@ -43,13 +43,13 @@ Reichstag composition:
 # 1928: 15, 1930: 15, 1932: 
 {!<span class="tooltip-text" title="Center Party + Bavarian People's Party">Union</span>!}: [+ union_r +]%
 # 1928: 10, 1930: 13
-{!<span class="tooltip-text" title="Communist Party of Germany">Left</span>!}: [+ left_r +]%
+{!<span class="tooltip-text" title="Communist Party of Germany"></span>!}: [+ left_r +]%
 # 1928: 5, 1930: 4 (as DstP)
 {!<span class="tooltip-text" title="German Democratic Party">!}[? if not spd_name: SPD?][? if ddp_name != 0 : [+ spd_name +]?]{!</span>!}: [+ spd_r +]%
 # 1928: 9, 1930: 5
 {!<span class="tooltip-text" title="German People's Party">FDP</span>!}: [+ fdp_r +]%
 # 1928: 14, 1930: 7
-{!<span class="tooltip-text" title="German National People's Party">SSW</span>!}: [+ ssw_r +]%
+{!<span class="tooltip-text" title="<span style="color: #000088;">**SSW**</span>: [+ ssw_r +]%
 # 1928: 3, 1930: 18
 {!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">AFD</span>!}: [+ afd_r +]%
 # 1928: 9, 1930: 10
