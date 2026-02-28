@@ -334,7 +334,7 @@ Q.economic_records = [];
 Q.president = "Steinmeier";
 // starting chancellor: Wilhelm Marx
 Q.chancellor = "Scholz";
-Q.chancellor_party = '<span style="color: #BA0000;">**SPD**</span>';
+Q.chancellor_party = '<span style="color: #BA0000;">SPD</span>';
 Q.greens_in_government = 1;
 Q.union_in_government = 0;
 Q.spd_in_government = 1;
