@@ -21,7 +21,7 @@ if (Q.economic_growth) {
 Resources available: [+ resources +]
 
 Green position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
-[? if in_weimar_coalition and spd_in_government: Trafficl light Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
+[? if in_weimar_coalition and spd_in_government: Traffick light Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
 
 [? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
@@ -45,7 +45,7 @@ Reichstag composition:
 # 1928: 10, 1930: 13
 {!<span class="tooltip-text" title="Communist Party of Germany">Left</span>!}: [+ left_r +]%
 # 1928: 5, 1930: 4 (as DstP)
-{{!<span class="tooltip-text" title="Social Democratic Party of Germany">spd</span>!}: [+ spd_r +]%
+{!<span class="tooltip-text" title="German Democratic Party">!}[? if not spd_name: SPD?][? if ddp_name != 0 : [+ spd_name +]?]{!>SPD</span>!}: [+ spd_r +]%
 # 1928: 9, 1930: 5
 {!<span class="tooltip-text" title="German People's Party">FDP</span>!}: [+ fdp_r +]%
 # 1928: 14, 1930: 7
