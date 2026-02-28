@@ -3,7 +3,7 @@ new-page: true
 on-arrival: month_actions += 1
 max-visits: 36
 is-card: true
-card-image: https://www.horizont.net/news/media/46/Habeck-457953-detailpp.jpeg
+card-image: https://bilder.deutschlandfunk.de/2a/b2/df/31/2ab2df31-5754-4017-8ef9-1e96eee5ebd6/klima-wahlkampf-100-1920x1080.jpg
 frequency: 100
 tags: party_affairs
 
