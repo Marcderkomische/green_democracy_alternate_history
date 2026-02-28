@@ -228,14 +228,14 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['greens', 'left', 'union', 'spd', 'fdp', 'dnvp', 'afd', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_spd = 60;
+Q.workers_green = 60;
 Q.workers_kpd = 20;
 Q.workers_z = 5;
 Q.workers_ddp = 0;
@@ -244,7 +244,7 @@ Q.workers_dnvp = 5;
 Q.workers_nsdap = 0;
 Q.workers_other = 10;
 
-Q.old_middle_spd = 5;
+Q.old_middle_green = 5;
 Q.old_middle_kpd = 0;
 Q.old_middle_z = 5;
 Q.old_middle_ddp= 10;
@@ -253,7 +253,7 @@ Q.old_middle_dnvp = 25;
 Q.old_middle_nsdap = 10;
 Q.old_middle_other = 10;
 
-Q.new_middle_spd = 5;
+Q.new_middle_green = 5;
 Q.new_middle_kpd = 1;
 Q.new_middle_z = 10;
 Q.new_middle_ddp= 25;
@@ -262,7 +262,7 @@ Q.new_middle_dnvp = 10;
 Q.new_middle_nsdap = 5;
 Q.new_middle_other = 15;
 
-Q.rural_spd = 10;
+Q.rural_green = 10;
 Q.rural_kpd = 0;
 Q.rural_z = 5;
 Q.rural_ddp= 5;
@@ -271,7 +271,7 @@ Q.rural_dnvp = 45;
 Q.rural_nsdap = 5;
 Q.rural_other = 10;
 
-Q.unemployed_spd = 25;
+Q.unemployed_green = 25;
 Q.unemployed_kpd = 55;
 Q.unemployed_z = 1;
 Q.unemployed_ddp = 0;
@@ -280,7 +280,7 @@ Q.unemployed_dnvp = 5;
 Q.unemployed_nsdap = 15;
 Q.unemployed_other = 9;
 
-Q.catholics_spd = 15;
+Q.catholics_green = 15;
 Q.catholics_kpd = 2;
 Q.catholics_z = 50;
 Q.catholics_ddp = 0;
@@ -296,21 +296,21 @@ Q.catholics_other = 12;
 // note: the Z figures also include the BVP (Bavarian people's party)
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
-Q.spd_r = 26;
-Q.kpd_r = 9;
-Q.z_r = 17;
-Q.ddp_r = 6;
-Q.dvp_r = 10;
-Q.dnvp_r = 20;
-Q.nsdap_r = 3;
+Q.greens_r = 15;
+Q.left_r = 5;
+Q.union_r = 24;
+Q.spd_r = 25;
+Q.fdp_r = 11;
+Q.dnvp_r = 8;
+Q.afd_r = 3;
 Q.other_r = 9;
 
 // diff from prev
-Q.old_spd_r = 26;
-Q.old_kpd_r = 9;
-Q.old_z_r = 17;
-Q.old_ddp_r = 6;
-Q.old_dvp_r = 10;
+Q.old_greens_r = 26;
+Q.old_left_r = 9;
+Q.old_union_r = 17;
+Q.old_spd_r = 6;
+Q.old_fdp_r = 10;
 Q.old_dnvp_r = 20;
 Q.old_nsdap_r = 3;
 Q.old_other_r = 9;
@@ -331,21 +331,21 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.president = "Hindenburg";
+Q.president = "Steinmeier";
 // starting chancellor: Wilhelm Marx
-Q.chancellor = "Marx";
-Q.chancellor_party = 'Z';
-Q.spd_in_government = 0;
-Q.z_in_government = 1;
-Q.ddp_in_government = 0;
-Q.dvp_in_government = 1;
-Q.dnvp_in_government = 1;
+Q.chancellor = "Scholz";
+Q.chancellor_party = 'SPD';
+Q.greens_in_government = 1;
+Q.union_in_government = 0;
+Q.spd_in_government = 1;
+Q.fdp_in_government = 1;
+Q.dnvp_in_government = 0;
 Q.kpd_in_government = 0;
 Q.nsdap_in_government = 0;
 
 Q.in_right_coalition = 0;
 // Weimar coalition = SPD + Z + DDP
-Q.in_weimar_coalition = 0;
+Q.in_weimar_coalition = 1;
 // Grand coalition = SPD + Z + BVP + DDP + DVP
 // also includes the "new grand coalition" of SPD + Z + BVP + DDP + DVP + Others
 Q.in_grand_coalition = 0;
@@ -375,22 +375,22 @@ Q.minority_government = 0;
 // ministries - which parties control the ministries?
 // starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
 // is the agricultural ministry useful at all?
-Q.foreign_minister = 'Streseman';
-Q.foreign_minister_party = 'DVP';
-Q.interior_minister = 'von Keudell';
-Q.interior_minister_party = 'DNVP';
-Q.justice_minister = 'Hergt';
-Q.justice_minister_party = 'DNVP';
-Q.labor_minister = 'Brauns';
-Q.labor_minister_party = 'Z';
-Q.reichswehr_minister = 'Groener';
-Q.reichswehr_minister_party = 'I';
-Q.economic_minister = 'Curtius';
-Q.economic_minister_party = 'DVP';
-Q.finance_minister = 'Köhler';
-Q.finance_minister_party = 'Z';
-Q.agriculture_minister = 'Schiele';
-Q.agriculture_minister_party = 'DNVP';
+Q.foreign_minister = 'Baerbock';
+Q.foreign_minister_party = 'Greens';
+Q.interior_minister = 'Faeser';
+Q.interior_minister_party = 'SPD';
+Q.justice_minister = 'Buschmann';
+Q.justice_minister_party = 'FDP';
+Q.labor_minister = 'Heil';
+Q.labor_minister_party = 'SPD';
+Q.reichswehr_minister = 'Lambrecht';
+Q.reichswehr_minister_party = 'SPD';
+Q.economic_minister = 'Habeck';
+Q.economic_minister_party = 'Greens';
+Q.finance_minister = 'Lindner';
+Q.finance_minister_party = 'FDP';
+Q.agriculture_minister = 'Özdemir';
+Q.agriculture_minister_party = 'Greens';
 
 // Events: what has occurred?
 Q.panzerkreuzer_seen = 0;
