@@ -215,7 +215,7 @@ Q.income = 1600;
 Q.inflation = 4.9;
 
 // economic growth - same source as above, Table 2 (preisbereinigt) - this is also the source for the yearly changes in the great depression.
-Q.economic_growth = 4.4;
+Q.economic_growth = 1.9;
 
 // economic expansion timer
 Q.economic_expansion = 0;
@@ -228,7 +228,7 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['greens', 'left', 'union', 'spd', 'fdp', 'dnvp', 'afd', 'other'];
+Q.parties = ['greens', 'left', 'union', 'spd', 'fdp', 'ssw', 'afd', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
@@ -301,8 +301,8 @@ Q.left_r = 5;
 Q.union_r = 24;
 Q.spd_r = 25;
 Q.fdp_r = 11;
-Q.dnvp_r = 8;
-Q.afd_r = 3;
+Q.ssw_r = 1;
+Q.afd_r = 10;
 Q.other_r = 9;
 
 // diff from prev
@@ -345,7 +345,7 @@ Q.nsdap_in_government = 0;
 
 Q.in_right_coalition = 0;
 // Weimar coalition = SPD + Z + DDP
-Q.in_weimar_coalition = 1;
+Q.in_trafick_light_coalition = 1;
 // Grand coalition = SPD + Z + BVP + DDP + DVP
 // also includes the "new grand coalition" of SPD + Z + BVP + DDP + DVP + Others
 Q.in_grand_coalition = 0;
