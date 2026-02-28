@@ -3,7 +3,7 @@ new-page: true
 is-card: true
 tags: govt_affairs, cabinet
 on-arrival: month_actions += 1; foreign_policy_timer += 8
-view-if: spd_in_government = 1 and foreign_minister_party = "SPD" and  foreign_policy_timer <= 0
+view-if: spd_in_government = 1 and foreign_minister_party = "Greens" and  foreign_policy_timer <= 0
 card-image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb3ukyV6dIzDyxlJQmpLD47VQ9m4zLDQ2GMkMi3TF3Bl0hPQcksBbGj8106OpvgP7m8v4SSlIt6P8eB8xUyKthm9UUcuPiq8LxN6mF5A&s=10
 go-to: fp_menu
 #subtitle: International relations and dealing with Versailles.
